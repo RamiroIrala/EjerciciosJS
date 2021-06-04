@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejercicios</title>
+    <style>
+    body{
+      background-color: #421a1a;
+    }
+        hr{
+            margin: 1% 20% 1% 20%;
+        }
+        a{
+            font-size: 1.5em;
+        }
+        .container{
+            text-align: center;
+                margin: 10px;
+                 margin-bottom: 5%;
+        }
+        .containerr{
+            text-align: center;
+            margin: 10px 210px 10px 210px;
+            background-color: #ceb6acf2;
+            font-family: cursive;
+        }
+        h4{
+            text-align: center;
+        }
+        blockquote{
+            text-align: left;
+        }
+        input{
+            margin: 10px;
+            border-radius: 5px;
+        }
+        button{
+            border-radius: 5px;
+            margin: 10px;
+        }
+        h1{
+            font-size: 45px;
+            font-family: -webkit-pictograph;
+            color: #ffffff;
+            text-shadow: 4px 3px 3px #000000
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Trabajo Practico - JS nivel 0</h1>
+        <div class="containerr">
+            <h4>Ejercicio 1</h4>
+            <blockquote>Pide una nota (número). Muestra la calificación según la nota:<br>
+                ○ 0-3: Muy deficiente.<br>
+                ○ 3-5: Insuficiente.<br>
+                ○ 5-6: Suficiente.<br>
+                ○ 6-7: Bien.<br>
+                ○ 7-9: Notable.<br>
+                ○ 9-10: Sobresaliente.<br>
+            </blockquote>
+             <input type="text"  placeholder="Ingrese Nota" id="nota">
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="ejercicio1()">
+                Ejecutar
+            </button>
+        </div>
+           <hr>
+        <div class="containerr">
+            <h4>Ejercicio 2</h4>
+            <blockquote>Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al salir con “cancelar”
+                deben mostrarse todas las cadenas concatenadas con un - (guión).
+            </blockquote>
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="ejercicio2()">
+                Ejecutar
+            </button>
+        </div>
+        <hr>
+         <div class="containerr">
+            <h4>Ejercicio 3</h4>
+            <blockquote>Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá
+                indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de
+                los números introducidos.
+            </blockquote>
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="ejercicio3()">
+                Ejecutar
+            </button>
+        </div>
+        <hr>
+         <div class="containerr">
+            <h4>Ejercicio 4</h4>
+            <blockquote>Realizar una página con un script que calcule el valor de la letra de un número de DNI (Documento
+                nacional de identidad).
+                El algoritmo para calcular la letra del dni es el siguiente :
+                <br>
+                ○ El número debe ser entre 0 y 99999999
+                <br>
+                ○ Debemos calcular el resto de la división entera entre el número y el número 23.
+                <br>
+                ○ Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes: (T, R, W, A, G, M,
+                Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E)
+                <br>
+                ○ Si lo introducido no es un número deberá indicarse con un alert y volver a preguntar.
+                <br>
+                ○ Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
+            </blockquote>
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="ejercicio4()">
+                Ejecutar
+            </button>
+        </div>
+        <hr>
+        <div class="containerr">
+            <h4>Ejercicio 5</h4>
+            <blockquote>Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :
+                <br>1
+                <br>22
+                <br>333
+                <br>4444
+                <br>55555
+                <br>666666
+            </blockquote>
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="ejercicio5()">
+                Ejecutar
+            </button>
+        </div>
+        <hr>
+         <div class="containerr">
+            <h4>Ejercicio 6</h4>
+            <blockquote>Haz un script que escriba una pirámide inversa de los números del 1 al número que indique el
+                usuario de la siguiente forma : (suponiendo que indica 30).
+                <br>30303030303030303030303030303030303
+                <br>2828282828282828282828282
+                <br>.....
+                <br>333
+                <br>1
+            </blockquote>
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="ejercicio6()">
+                Ejecutar
+            </button>
+        </div>
+        <hr>
+        <div class="containerr">
+            <h4>Ejercicio 7</h4>
+            <blockquote>Un script que escriba los números del 1 al 500, que indique cuáles son múltiplos de 4 y de 9 y que
+                cada 5 líneas muestre una línea horizontal. Por ejemplo :
+                <br>1
+                <br>2
+                <br>3
+                <br>4 (Múltiplo de 4)
+                <br>5
+                <br>————————————————————-
+                <br>6
+                <br>7
+                <br>8 (Múltiplo de 4)
+                <br>9 (Múltiplo de 9)
+                <br>10
+            </blockquote>
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="ejercicio7()">
+                Ejecutar
+            </button>
+        </div>
+        <hr>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
