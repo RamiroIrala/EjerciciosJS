@@ -65,7 +65,7 @@ const ejercicio3 = () => {
             break;
         }else if(isNaN(parseFloat(input))){// chekea si e un numero
             alert('Este programa solo permite ingresar numeros, pruebe nuevamente.')
-        }else{// sumar al total
+        }else{// TOTAL sumado
             sum += parseFloat(input);
         }
     }
